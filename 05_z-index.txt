@@ -1,0 +1,18 @@
+Q5. Explain the z-index with a code example.
+
+Answer:- 
+
+    	The z-index is a CSS property that specifies the stack order of elements on a web page. Elements with a higher z-index value are stacked on top of elements 	with a lower z-index value. This property only affects elements that have a position value other than static (i.e., relative, absolute, fixed, or sticky).
+
+    	HERE's A MORE DETAILED EXPLANATION
+
+    	1. Default Stacking Context: By default, elements are stacked in the order they appear in the HTML, with elements later in the document appearing on top of 						earlier ones.
+
+    	2. Creating a Stacking Context: A new stacking context is created by elements with a position value other than static and a z-index value. Other CSS properties 					like opacity, transform, filter, and flex also create stacking contexts.
+
+   	3. Stack Order:
+
+     	--> Elements without a z-index specified or with a z-index of auto are placed at the   same stacking level and follow the order of their appearance in the 		HTML.
+    	--> Elements with a z-index specified are stacked according to their z-index values, from lowest to highest. Elements with the same z-index value follow the 			order they appear in the HTML.
+
+    	4. Nested Stacking Contexts: Elements within a stacking context are ordered relative to their parent stacking context. Nested stacking contexts are independent 		of each other

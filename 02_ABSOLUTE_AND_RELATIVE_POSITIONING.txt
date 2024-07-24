@@ -1,0 +1,30 @@
+2. Explain the difference between Absolute and Relative Positioning
+
+Ans: - 
+	Relative and absolute positioning are two techniques used in CSS (Cascading Style Sheets) to precisely control the placement and layout of elements on a 		webpage. Here's a breakdown of each:
+
+	1. Relative Positioning:
+   		- With relative positioning, an element is positioned relative to its normal position on the webpage flow.
+   		- When you apply relative positioning to an element, you can then use properties like `top`, `bottom`, `left`, and `right` to shift the element from 			its default position.
+   		- Importantly, the space taken up by the element remains reserved in the normal document flow. This means other elements on the page are still affected 		by its presence.
+
+	2. Absolute Positioning:
+   		- Absolute positioning allows you to position an element relative to its nearest positioned ancestor. If there's no positioned ancestor, it's 		positioned relative to the initial containing block (usually the `<html>` element).
+   		- Unlike relative positioning, absolute positioning removes the element from the normal document flow. This means other elements on the page act as if 		the absolutely positioned element doesn't exist, and they may overlap it.
+   		- When an element is absolutely positioned, it's taken out of the document flow, so other elements are not affected by it in terms of layout, unless 		they're also absolutely positioned.
+
+	KEY DIFFERENCES:
+
+	1. Relation to Document Flow:
+   	- Relative positioning does not remove the element from the document flow, so surrounding elements are aware of its presence and will adjust their positions 	accordingly.
+   	- Absolute positioning removes the element from the document flow, so other elements may ignore its space entirely.
+
+	2. Reference Point:
+   	- Relative positioning is relative to the element's normal position in the document flow.
+   	- Absolute positioning is relative to the nearest positioned ancestor or the initial containing block.
+
+	3. Space Occupancy:
+   	- With relative positioning, the space occupied by the element remains reserved, affecting the layout of surrounding elements.
+   	- Absolute positioning removes the element from the normal document flow, potentially causing other elements to overlap or adjust to fill the void left by the 	absolutely positioned element.
+
+	In summary, relative positioning is ideal for fine-tuning the placement of an element within the document flow, while absolute positioning is useful when you 	want to take an element out of the document flow entirely and precisely position it relative to a specific ancestor or the initial containing block.
