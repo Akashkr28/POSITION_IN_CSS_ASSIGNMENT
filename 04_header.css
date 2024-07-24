@@ -46,7 +46,7 @@
     color: #ffffff;
 }
 
-.nav-item.button > button {
+.nav-item button {
     padding: 10px 20px;
     background: transparent;
     border: 2px solid #a08f36;
